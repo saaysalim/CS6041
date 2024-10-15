@@ -1,5 +1,5 @@
 {
-  "homepage": "https://saaysalim.github.io/MyPortfolio"
+  "homepage": "https://saaysalim.github.io/MyPortfolio",
   "name": "FirstProject",
   "private": true,
   "version": "0.0.0",
@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "FirstProject": "file:",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "saaysalim.github.io": "file:"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

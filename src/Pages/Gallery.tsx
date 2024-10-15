@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import { useState } from 'react';
 import './Gallery.css';
 
 // Define the ImageGallery component using TypeScript
