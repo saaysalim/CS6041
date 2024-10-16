@@ -1,4 +1,3 @@
-// Blog.js
 import React from 'react';
 import './Blog.css';
 
