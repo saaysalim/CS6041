@@ -99,6 +99,7 @@ const Blog = () => {
   \`\`\`
   `,
 },
+    ]
   return (
     <div className="blog-container">
       <h1>Salim Saay's Blog</h1>
