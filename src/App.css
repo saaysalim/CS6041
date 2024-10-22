@@ -5,6 +5,14 @@ body, html, #root {
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
   height: 100%;
+  /* Background image */
+  background-image: url('https://github.com/saaysalim/MyPortfolio/blob/main/public/Background%20picture.png'); /* Path to the image in the public folder */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Ensure full viewport height */
+
+  https://github.com/saaysalim/MyPortfolio/blob/main/public/Background%20picture.png 
 }
 /* Ensure the app takes up the full height */
 #root > div {
