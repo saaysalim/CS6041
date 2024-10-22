@@ -11,8 +11,6 @@ body, html, #root {
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 100vh; /* Ensure full viewport height */
-
-  https://github.com/saaysalim/MyPortfolio/blob/main/public/Background%20picture.png 
 }
 /* Ensure the app takes up the full height */
 #root > div {
