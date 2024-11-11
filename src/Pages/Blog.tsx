@@ -9,9 +9,9 @@ interface BlogPostData {
 }
 
 interface State {
-  likes: number;
+  likes number;
   comments: string[];
-  isBookmarked: boolean;
+  bookmarked: boolean;
 }
 
 interface Action {
@@ -22,7 +22,7 @@ interface Action {
 const initialState: State = {
   likes: 0,
   comments: [],
-  isBookmarked: false,
+  bookmarked: false,
 };
 
 const actions = {
@@ -32,13 +32,13 @@ const actions = {
 };
 
 const reducer = (state: State, action: Action): State => {
-  switch (action.type) {
+  switch (action. type) {
     case actions.incrementLikes:
-      return { ...state, likes: state.likes + 1 };
+      return { ...state, likes state.likes + 1 };
     case actions.addComment:
       return { ...state, comments: [...state.comments, action.payload || ''] };
     case actions.toggleBookmark:
-      return { ...state, isBookmarked: !state.isBookmarked };
+      return { ...state, bookmarked: !state.isBookmarked };
     default:
       return state;
   }
@@ -75,7 +75,7 @@ const BlogPost: React.FC = () => {
       </div>
       
       <button onClick={toggleBookmark}>
-        {state.isBookmarked ? 'Remove Bookmark' : 'Bookmark'}
+        {state. bookmarked? 'Remove Bookmark': 'Bookmark'}
       </button>
     </div>
   );
