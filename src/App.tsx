@@ -15,6 +15,8 @@ import Gallery from './Pages/Gallery';
 import Blog from './Pages/Blog';
 import VideoGallery from './Pages/VideoGallery';
 import Education from './Pages/Education';
+import Languages from './Pages/Languages';
+import Home from './Pages/Home';
 function App(){
   return (
     <div>
@@ -32,10 +34,12 @@ function App(){
             <li><Link to="/Blog">Blog</Link></li>
             <li><Link to="VideoGallery">VideoGallery</Link></li>
             <li><Link to="Education">Education</Link></li>
+            <li><Link to="/languages">Languages</Link> </li>
           </div>
         </ul>
       </nav>
       <Routes>
+        <Route path="/" element={<Home />} /> {/* Default Home Route */}
         <Route path="/About"element={<About/>} />
         <Route path="/Project"element={<Project/>} />
         <Route path="/Contact"element={<Contact/>} />
@@ -43,6 +47,8 @@ function App(){
         <Route path="/Blog"element={<Blog/>}/>
         <Route path="/VideoGallery"element={<VideoGallery/>}/>
         <Route path="/Education"element={<Education/>}/>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/languages" element={<Languages />} />
       </Routes>
       <footer className="footer"> {/* Footer section */}
         <p>&copy; {new Date().getFullYear()} Salim Saay. All Rights Reserved.</p> {/* Dynamic copyright year */}
